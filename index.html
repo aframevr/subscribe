@@ -21,12 +21,31 @@
     #subscribeForm {
       color: #FAFAFA;
       margin: 0;
+      max-width: 90%;
       padding: 5px 10px 0 0;
+    }
+
+    form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 480px) {
+      form {
+        flex-direction: row;
+      }
+      form input[type="email"] {
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
     }
 
     h1 {
       color: #333;
       margin-bottom: 30px;
+      max-width: 90%;
+      text-align: center;
     }
 
     input[type="email"] {
@@ -36,7 +55,8 @@
       color: $gray;
       height: 40px;
       padding-left: 20px;
-      margin-right: 10px;
+      margin-bottom: 10px;
+      max-width: 100%;
       width: 480px;
       text-transform: uppercase;
       vertical-align: middle;
